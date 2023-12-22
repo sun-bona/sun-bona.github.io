@@ -4,721 +4,279 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Cambodia</title>
-    <link rel="icon" href="./img/BC logo.png">
-    <link rel="stylesheet" href="BC.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400&family=Lato:wght@300;400;900&family=Moul&family=Nunito&family=Roboto:ital,wght@0,400;0,900;1,100;1,700;1,900&family=Rubik&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nirk Pub - នឺក ផាប់</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Lato:wght@100;300;400;700;900&family=Moul&family=Nunito&family=Roboto:ital,wght@0,400;0,900;1,100;1,700;1,900&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/link/bootstrap.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="/img/Logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div class="main">
-        <div class="left">
-            <div class="left_header">
-                <img height="100%" src="./img/BC logo.png" alt="">
-                <p>Business</p>
-                <h3>Cambodia</h3>
-            </div>
-            <div class="search_bar">
-                <input type="text" placeholder="Search">
-            </div>
-            <div class="left_menu">
-                <div class="list">
-                    <ul>
-                        <li class="home"><a href="">ទំព័រដើម</a></li>
-                        <li><a href="">ហិរញ្ញវត្ថុ</a></li>
-                        <li><a href="">ចាប់ផ្ដើមអជីវកម្ម</a></li>
-                        <li><a href="">អចលនទ្រព្យ</a></li>
-                        <li><a href="">ភាពជាអ្នកដឹកនាំ</a></li>
-                        <li><a href="">កំពូលអ្នកលក់</a></li>
-                        <li><a href="">មុខរបរបច្ចេកវិទ្យា</a></li>
-                        <li><a href="">ព័ត៏មានថ្មីៗ</a></li>
-                        <li><a href="">អត្ថបទ PR</a></li>
-                        <li><a href="">របាយការណ៍</a></li>
-                        <li><a href="">ពិព័រណ៍មុខរបរ 2022</a></li>
-                        <li><a href="">មុខរបរកសិកម្ម</a></li>
-                    </ul>
-                </div>
+    <div class="container mt-3">
+        <div class="logo">
+            <img width="100%" height="100%" src="/img/Logo.jpg" alt="">
+        </div>
+        <h5><b>Nirk Pub - នឹក ផាប់</b></h5>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="seach">
+            <input type="text" class="form-control" placeholder="Seach This">
+        </div>
+        <button type="submit" class="btn">Seach</button>
+
+        <!-- button in header -->
+
+        <div class="login">
+            <i class="fa-regular fa-user"></i>
+            <button id="login" class="btn">Login</button>
+            <button id="info" class="btn">Info Admin</button>
+        </div>
+        <div class="header_right">
+            <img width="100%" height="250px" src="/img/admin.jpg" alt="">
+            <div class="name_admin">
+                <p> ខ្ញុំបាតឈ្មោះ <a class="text-white text-decoration-none" href="https://web.facebook.com/na.svit.5"><b>ស៊ុន បូណា</b></a> អាយុ ២២ឆ្នាំ ជានិស្សិតព័ត៍មានវិទ្យាឆ្នាំទី២នៃ <a class="text-white text-decoration-none" href="https://web.facebook.com/rupp.edu.kh"><b>សកលវិទ្យាល័យភូមិន្ទភ្នំពេញ (RUPP)</b></a> នឹងជាសិស្សនៃ <a class="text-white text-decoration-none" href="https://web.facebook.com/eteccenter/"><b>ETEC Center -មជ្ឈមណ្ឌលបណ្តុះជំនាញ I.T</b></a> ៕</p>
+                <spen>Tell   :   (855) 778-089-51</spen>
             </div>
         </div>
-        <div class="right">
-            <p>អត្ថបទប្រចាំថ្ងៃថ្មីៗ</p>
-            <h2>ដើម្បីបង្កើនចំណេះដឹងក្នុងការធ្វើអាជីវកម្ម</h2>
 
-            <div class="slide">
-                <img width="100%" height="100%" src="./img/slide.jpg" alt="">
+        <!-- form login -->
+        
+        <div id="login_right" class="container w-50 bg-warning">
+            <h2 class="text-decoration-underline text-center mt-3">Login Google Account</h2>
+            <form action="">
+                <div class="form-group mt-5">
+                <label for="name">Username</label>
+                <input type="text" id="name" class="form-control" placeholder="username">
+                <span class="form-text">You can use letters and number</span>
+            </div>
+            <div class="form-group mt-3">
+                <label for="password">password</label>
+                <input type="password" id="password" class="form-control" placeholder="password">
+                <input onclick="check()" type="checkbox" class="form-check-input"> 
+                <span class="form-text">Remember password</span>
+            </div>
+            <button type="reset" class="mt-3 btn btn-warning">Clear</button>
+            <button type="submit" class="mt-3 btn btn-outline-dark">Submit</button>
+                
+            </form>
+        </div>
+        <div class="back"></div>
+    </div>
+
+    <!-- navbar -->
+
+    <div class="container-fluid mt-3">
+        <ul>
+            <li id="home"><a href="/Project/index.html">HOME</a></li>
+            <li><a href="/more/about.html">ABOUT</a></li>
+            <li><a href="/more/events.html">EVENTS</a></li>
+            <li><a href="/more/photo.html">PHOTO</a></li>   
+            <li><a href="/more/menu.html">MENU</a></li> 
+            <li><a href="/more/openinghours.html">OPENING HOURS</a></li>
+            <li><a onclick="openwin()" href="">CONTACT</a></li>
+        </ul>
+        <div class="logo_right">
+            <img width="100%" height="100%" src="/img/Logo.jpg" alt="">
+        </div>
+    </div>
+    <div class="article">
+        <div class="left">
+            <h1>Welcome To Nirk-Pub Restauant....!</h1>
+            <p>Date : 08-03-2023</p>
+            <p id="p">Nirk Pub - នឹកផាប់ is one of the best places in Phnom Penh <br> that you can visit with many variations.💖🥰</p>
+            
+            <div class="box">
+                <div class="block">
+                    <img width="100%" height="100%" src="/img/opening hours.jpg" alt="">
+                </div>
+                <div class="block">
+                    <img width="100%" height="100%" src="/img/50.jpg" alt="">
+                </div>
+                <div class="block">
+                    <img width="100%" height="100%" src="/img/42.jpg" alt="">
+                </div>
+                <div class="block">
+                    <img width="100%" height="100%" src="/img/330381429_684007343413044_1868571823096958555_n.jpg" alt="">
+                </div>
+                <div class="block">
+                    <img width="100%" height="100%" src="/img/47.jpg" alt="">
+                </div>
+                <div class="block">
+                    <img width="100%" height="100%" src="/img/44.jpg" alt="">
+                </div>
+                <div class="block">
+                    <img width="100%" height="100%" src="/img/41.jpg" alt="">
+                </div>
+            </div>
+            <div class="more">
+                <p>Here are some pictures in our restaurant.</p>
+                <span>You can click Learn-More to see the full article.</span><br>
+                <button id="buton"><a href="/more/photo.html">See More</a></button>
+            </div>
+            <div class="data">
+                <h1>D A T A</h1>
+                <p>👉 Hello everyone, Nirk-Pub would like to thank you for visiting our restaurant. We apologize for any inconvenience or inconvenience caused. Nirk-Pub). Everyone will have fun because we have done a lot of events, such as meeting famous singers, as well as a lot of discounts that have never been anywhere else. <span>Learn More</span></p>
+            </div>
+            <div class="discount" data-aos="fade-right">
+                <img width="100%" height="100%" src="/img/dis20.jpg" alt="">
                 <div class="cover">
-                    <div class="slide_title">
-                        <span>September 27 2022</span><br>
-                        <p>មកស្គាល់យីហោល្បីៗ លំដាប់ពិភពលោកទាំង១០ ដែលសម្រុកចូលកម្ពុជា ត្រឹមឆ្នាំ២០២២នេះ</p>
+                    <div class="discount_title">
+                        <span>March 10 2023</span>
+                        <p>វ៉ាវ. ឡូយទៀតហើយលោកអ្នកគ្រាន់តែខលមកលេខទូរស័ព្ទ Tell : 068303016 ដើម្បីធ្វើការកក់តុ៕លោកអ្នកនឹងទទួលបានការបញ្ចុះតម្លៃ 20% 🥰</p>
                         <button>បន្តការអាន</button>
                     </div>
                 </div>
             </div>
-
-            <div class="ad">
-                <p>ពាណិជ្ជកម្ម</p>
-                <div class="ad_img">
-                    <img width="100%" height="100%" src="./img/saop.jpg" alt="">
+            <div class="cocktail">
+                <h1>M O R E C O C K T A I L</h1>
+                <p>ម្នាក់ 5មុឺនរៀល មានតែគ្នា2នាក់ក៏អាចសេដបានដែរបងប្អូន🥲 <br> មានដល់ទៅ 3រសជាតិ ស្រលាញ់​មួយណារេីសមួយនឹង 🥳</p>
+            </div>
+            <div class="cocktail_box" data-aos="fade-up">
+                <div class="cocktail_block">
+                    <img width="100%" height="100%" src="/img/51.jpg" alt="">
+                    <div class="cocktail_block_write">
+                        <ul>
+                            <li>👉 ចូលចិត្តរស់ជាតិបែបមិច</li>
+                            <li>👉 ក្រូច</li>
+                            <li>👉 ឪឡឹក</li>
+                            <li>👉 ផាសិន</li>
+                            <li>👉 ស្រវឺងសូមកុំបើកបរ</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="beer_block">
+                    <img width="100%" height="100%" src="/img/52.jpg" alt="">
+                    <div class="beer_block_write">
+                        <ul>
+                            <li>👉 មួយណាក៏ 1$ ដែរ...</li>
+                            <li>👉 Cambodia</li>
+                            <li>👉 Angkor</li>
+                            <li>👉 Hanuman</li>
+                            <li>👉 ស្រវឺងសូមកុំបើកបរ</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
+            <div class="mail">
+                <ul>
+                    <li><a href="mailto:nirkpub@gmail.com">Sent Mail</a></li>
+                </ul>
             </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
+        </div>
+        <div class="right">
+            <div class="up">
+                <h1>Top Show</h1>
+                <div class="card_box">
+                    <div class="card">
+                        <img width="100%" height="100%" src="/img/42.jpg" alt="">
+                        <div class="title"><span>Meet Prety Girl💖</span></div>
+                    </div>
+                    <div class="card">
+                        <img width="100%" height="100%" src="/img/30.jpg" alt="">
+                        <div class="title"><span>Out of money🤣</span></div>
+                    </div>
+                    <div class="card">
+                        <img width="100%" height="100%" src="/img/46.jpg" alt="">
+                        <div class="title"><span>Smile for love🥲💖</span></div>
+                    </div>
+                    <div class="card">
+                        <img width="100%" height="100%" src="/img/21.jpg" alt="">
+                        <div class="title"><span>True love is as sweet as cake🤪</span></div>
+                    </div>
+                    <div class="card">
+                        <img width="100%" height="100%" src="/img/22.jpg" alt="">
+                        <div class="title"><span>Do not tell also know🍺</span></div>
+                    </div>
+                    <div class="card">
+                        <img width="100%" height="100%" src="/img/24.jpg" alt="">
+                        <div class="title"><span>Come Drink with Oun🤣🍻</span></div>
+                    </div>
+                    <div class="card">
+                        <img width="100%" height="100%" src="/img/18.jpg" alt="">
+                        <div class="title"><span>Smile Smile Smile🤪📸</span></div>
                     </div>
                 </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
+                
             </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="add">
-                <p>អត្ថបទពេញនិយមប្រចាំខែ <span>មើល​បន្ថែម</span></p>
-                <div class="box">
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="new_img">
-                        <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-                        <div class="name">
-                            <p>September 24 2022</p>
-                            <h5>ពង្រីកព្រមគ្នា! ផ្សារម៉ាក្រូ និងផ្សារ K Mall សម្រេចបង្កើតផ្សារថ្មី ខណៈទីតាំងសុទ្ធតែនៅ</h5>
-                            <h6>ស៊ុន បូណា <span><i class="fa-solid fa-eye"></i>20k</span></h6>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
+            <div class="down"></div>
         </div>
     </div>
-    <div class="footer">
-        <div class="footer_pic">
-            <img width="100%" height="100%" src="./img/slide.jpg" alt="">
-            <div class="over">
-                <div class="footer_logo">
-                    <img width="170px" height="150px" src="./img/1.png" alt="">
-                </div>
-                <div class="footer_title">
-                    <h3>Business Cambodia</h3>
-                    <p>បំផុសគំនិតរកស៊ី នាំមនុស្សឱ្យហ៊ានចេញរកស៊ីតាមក្ដីស្រមៃ</p>
-                    <h2>
-                        <i class="fa-brands fa-youtube"></i>
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-tiktok"></i>
-                        <i class="fa-brands fa-telegram"></i>
-                    </h2>
-                </div>
-            </div>
+
+    <div class="conect">
+        <div class="conect_ul">
+            <ul>
+                <li>
+                    <span class="conect_icon"><i class="fa-brands fa-facebook"></i></span>
+                    <span class="conect_name_icon">facebook</span>
+                </li>
+                <li>
+                    <span class="conect_icon"><i class="fa-brands fa-tiktok"></i></span>
+                    <span class="conect_name_icon">tiktok</span>
+                </li>
+                <li>
+                    <span class="conect_icon"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="conect_name_icon">instagram</span>
+                </li>
+                <li>
+                    <span class="conect_icon"><i class="fa-regular fa-envelope"></i></span>
+                    <span class="conect_name_icon">email</span>
+                </li>
+            </ul>
         </div>
-        <div class="footer_pre">
-            <div class="footer_pre_block">
-                <div class="footer_box_left"></div>
-                <div class="footer_box_center"></div>
-                <div class="footer_box_right"></div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+        <div class="footer_name">
+            <div class="name_nirk">
+                <h1>Nirk Pub - នឹកផាប់</h1>
+            </div>
+            <p>Hello everyone, I'm really glad to see you all so happy at my restaurant. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, dolorem quia nostrum aut unde commodi libero sed non quasi, beatae dolor rem porro sit quo? Fuga atque quibusdam, quo voluptatem, assumenda labore earum voluptate iste rem et neque molestias. Dolor in vero asperiores, earum nesciunt quia debitis quidem, qui quisquam quos ex fugit suscipit explicabo voluptatem unde, molestiae officia neque voluptatibus illo non? Nam, perspiciatis animi aliquid dolores quasi nesciunt officiis, ipsum recusandae voluptas repellat vel culpa explicabo quidem odit sunt unde numquam, aut necessitatibus cumque. Accusantium, aliquam? Illum, dolorem.
+        </div>
+
+        <div class="footer_line">
+            <div class="footer_mide"></div>
+        </div>
+
+        <div class="footer_box">
+            <div class="footer_block">
+                <h2><i>Location</i></h2>
+                <ul>
+                    <li>Cambodia</li>
+                    <li>Phnom Penh</li>
+                    <li>Turl Kork</li>
+                    <li>Street : 146</li>
+                </ul>
+            </div>
+            <div class="footer_block">
+                <h2><i>Contact</i></h2>
+                <ul>
+                    <li>098303011</li>
+                    <li>015303016</li>
+                    <li>068303016</li>
+                    <li id="last">FB : Nirk Pub</li>
+                </ul>
+            </div>
+            <div class="footer_block">
+                <h2><i>Follows</i></h2>
+                <div class="follow">
+                    <span class="follow_icon"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span class="follow_icon"><i class="fa-brands fa-tiktok"></i></span>
+                    <span class="follow_icon"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="follow_icon"><i class="fa-brands fa-instagram"></i></span>
+                </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+<script src="/link/JQuery.js"></script>
+<script src="./index.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
